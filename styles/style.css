@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button {
+  display: block;
+  outline: none; }
+
+input {
+  display: block;
+  outline: none; }
+
+label {
+  display: block; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  font-size: 1em;
+  line-height: 1.5em; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.base-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400vh;
+  background: url("../typo.png") top repeat; }
+
+.b1 {
+  top: -0.75em;
+  opacity: 0.3; }
+
+.grid {
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.switch {
+  display: none; }
+
+.switch-trigger {
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  background-color: black;
+  color: white;
+  padding: 0.667em;
+  cursor: pointer;
+  z-index: 20000; }
+
+.switch:checked ~ .grid {
+  opacity: 0;
+  pointer-events: none; }
+
+.switch:checked ~ #guides {
+  opacity: 0;
+  pointer-events: none; }
+
+.switch:checked ~ .switch-trigger {
+  opacity: 0.2; }
+
+#guides {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
+.guide {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-width: 0 0.75em;
+  border-color: #e22845;
+  border-style: solid;
+  margin-left: -0.75em; }
+  .guide div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: white; }
+
+.g0 {
+  left: 0; }
+  .g0 div {
+    left: auto;
+    right: 0.75em; }
+
+.g1 {
+  left: 11.11111%; }
+
+.g2 {
+  left: 16.66667%; }
+
+.g3 {
+  left: 22.22222%; }
+
+.g4 {
+  left: 27.77778%; }
+
+.g5 {
+  left: 33.33333%; }
+
+.g6 {
+  left: 38.88889%; }
+
+.g7 {
+  left: 44.44444%; }
+
+.g8 {
+  left: 50%; }
+
+.g9 {
+  left: 55.55556%; }
+
+.g10 {
+  left: 61.11111%; }
+
+.g11 {
+  left: 66.66667%; }
+
+.g12 {
+  left: 72.22222%; }
+
+.g13 {
+  left: 77.77778%; }
+
+.g14 {
+  left: 83.33333%; }
+
+.g15 {
+  left: 88.88889%; }
+
+.g16 {
+  right: 0; }
+  .g16 div {
+    left: 0.75em; }
+
+.g0, .g16 {
+  margin: 0;
+  border: 0;
+  padding-right: 0.75em;
+  background-color: #e22845;
+  width: 5.55556%; }
+
+@media screen and (max-width: 780px) {
+  .g1,
+  .g2,
+  .g3,
+  .g5,
+  .g6,
+  .g7,
+  .g9,
+  .g10,
+  .g11,
+  .g13,
+  .g14,
+  .g15 {
+    opacity: 0; } }
+
+@media screen and (max-width: 1366px) {
+  .g1,
+  .g3,
+  .g5,
+  .g7,
+  .g9,
+  .g11,
+  .g13,
+  .g15 {
+    opacity: 0; } }
+
+.view, .top-nav .brand-name, .top-nav .details, .contact-body, .contact-body .filter, .contact-body .contacts, .contact-body .contacts li, .contact-body .contacts li .avatar, .contact-body .contacts li .contact-info p, .contact-body .contacts li .icons, .contact-body .contacts li .icons .icon, form, form .input-field input[type=text], form .input-field input[type=tel], form .input-field input::-webkit-input-placeholder, form .add-btn {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.view, .top-nav .brand-name, .top-nav .details, .contact-body, .contact-body .filter, .contact-body .contacts, .contact-body .contacts li, .contact-body .contacts li .avatar, .contact-body .contacts li .contact-info p, .contact-body .contacts li .icons, .contact-body .contacts li .icons .icon, form, form .input-field input[type=text], form .input-field input[type=tel], form .input-field input:-ms-input-placeholder, form .add-btn {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.view, .top-nav .brand-name, .top-nav .details, .contact-body, .contact-body .filter, .contact-body .contacts, .contact-body .contacts li, .contact-body .contacts li .avatar, .contact-body .contacts li .contact-info p, .contact-body .contacts li .icons, .contact-body .contacts li .icons .icon, form, form .input-field input[type=text], form .input-field input[type=tel], form .input-field input::-ms-input-placeholder, form .add-btn {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.view, .top-nav .brand-name, .top-nav .details, .contact-body, .contact-body .filter, .contact-body .contacts, .contact-body .contacts li, .contact-body .contacts li .avatar, .contact-body .contacts li .contact-info p, .contact-body .contacts li .icons, .contact-body .contacts li .icons .icon, form, form .input-field input[type=text], form .input-field input[type=tel], form .input-field input::placeholder, form .add-btn {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.top-nav:after, .top-nav .details:after, .contact-body .contacts li:after, .contact-body .contacts li .contact-info:after, .contact-body .contacts li .icons:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.view {
+  position: relative;
+  padding: 0 5.55556%; }
+
+.top-nav .brand-name, .top-nav .details {
+  position: relative;
+  padding: 0 0.75em; }
+
+.active {
+  display: block; }
+
+.icon-edit {
+  background: url(../icons/edit.svg) center no-repeat;
+  background-size: cover; }
+
+.icon-delete {
+  background: url(../icons/rubbish-bin.svg) center no-repeat;
+  background-size: cover; }
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  height: 3.75em;
+  z-index: 3000;
+  background-color: white; }
+  .top-nav .brand-name {
+    float: left;
+    position: relative;
+    margin-top: 0.6em;
+    font-size: 2em; }
+  .top-nav .details {
+    float: right;
+    position: relative;
+    right: 1.5em;
+    padding-top: 1em; }
+    .top-nav .details .user {
+      float: left;
+      position: relative;
+      width: 2em;
+      height: 2em;
+      margin-right: 1.5em;
+      border-radius: 100%;
+      background: url(../images/a.jpg) center no-repeat;
+      background-size: cover; }
+    .top-nav .details .username {
+      float: left;
+      position: relative;
+      margin-top: .444em;
+      font-size: 1em;
+      font-weight: 500; }
+
+.contact-body {
+  position: relative;
+  top: 6em;
+  width: 80%;
+  margin: auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  .contact-body .filter {
+    position: absolute;
+    right: 12.75em;
+    width: 15em;
+    height: 3em;
+    padding: .5em 1em; }
+  .contact-body .contacts {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); }
+    .contact-body .contacts li {
+      position: relative;
+      width: 100%;
+      height: 4em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.14); }
+      .contact-body .contacts li .avatar {
+        float: left;
+        position: relative;
+        width: 3em;
+        height: 3em;
+        margin: 0 .5em;
+        margin-top: .5em;
+        padding-top: .75em;
+        border-radius: 100%;
+        background-color: #eb9595; }
+        .contact-body .contacts li .avatar h5 {
+          position: relative;
+          text-align: center;
+          font-size: 1em;
+          font-weight: 400;
+          color: white;
+          text-transform: uppercase; }
+      .contact-body .contacts li .contact-info {
+        position: relative;
+        float: left;
+        width: 80%; }
+        .contact-body .contacts li .contact-info p {
+          float: left;
+          position: relative;
+          padding: 0 1em;
+          margin-top: 1.5em;
+          text-transform: capitalize; }
+        .contact-body .contacts li .contact-info .full-name {
+          width: 60%; }
+        .contact-body .contacts li .contact-info .phone-number {
+          width: 40%; }
+      .contact-body .contacts li .icons {
+        position: relative;
+        width: 11%;
+        float: right; }
+        .contact-body .contacts li .icons .icon {
+          position: relative;
+          width: 1em;
+          height: 1em;
+          margin-left: 1em;
+          margin-top: 1.5em;
+          float: left;
+          cursor: pointer; }
+    .contact-body .contacts .title .avatar {
+      opacity: 0; }
+    .contact-body .contacts .title .icons {
+      opacity: 0; }
+
+form {
+  display: none;
+  position: fixed;
+  z-index: 3200;
+  top: 20vh;
+  width: 40%;
+  margin: auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); }
+  form .icon-close {
+    position: absolute;
+    z-index: 3300;
+    right: 1.5em;
+    width: .75em;
+    height: .75em;
+    background: url(../icons/cancel.svg) center no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+    form .icon-close:hover {
+      background: url(../icons/cancel-blue.svg) center no-repeat; }
+  form h3 {
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 2.25em; }
+  form input {
+    margin: auto; }
+  form .input-field {
+    position: relative;
+    width: 18em;
+    margin: auto;
+    margin-bottom: 1.5em; }
+    form .input-field input[type=text], form .input-field input[type=tel] {
+      position: relative;
+      width: inherit;
+      height: 3em;
+      padding: 1em;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.24); }
+    form .input-field input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+    form .input-field input::-webkit-input-placeholder {
+      position: relative;
+      font-size: .75em;
+      opacity: .34; }
+    form .input-field input:-ms-input-placeholder {
+      position: relative;
+      font-size: .75em;
+      opacity: .34; }
+    form .input-field input::-ms-input-placeholder {
+      position: relative;
+      font-size: .75em;
+      opacity: .34; }
+    form .input-field input::placeholder {
+      position: relative;
+      font-size: .75em;
+      opacity: .34; }
+    form .input-field p {
+      display: none;
+      position: relative;
+      font-size: .7em;
+      color: red; }
+  form .add-btn {
+    position: relative;
+    width: 7.5em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(26, 115, 232, 0.9); }
+
+.addBtn {
+  position: fixed;
+  z-index: 2000;
+  bottom: 10vh;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  border: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  -o-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24); }
+
+.icon-add {
+  background: rgba(26, 115, 232, 0.9) url(../icons/add-plus-button.svg) center no-repeat;
+  background-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  .top-nav .brand-name {
+    font-size: 1.1em;
+    margin-top: 0.9375em; }
+  .top-nav .details {
+    right: 0;
+    padding-top: 1.2em; }
+    .top-nav .details .user {
+      width: 1.5em;
+      height: 1.5em;
+      margin-right: 0.75em; }
+    .top-nav .details .username {
+      font-size: .8em;
+      margin-top: .2em; }
+  .contact-body {
+    width: 100%; }
+    .contact-body .filter {
+      right: 2.4em;
+      width: 10.5em; }
+    .contact-body .contacts {
+      width: 90%; }
+      .contact-body .contacts li .avatar {
+        width: 2.5em;
+        height: 2.5em;
+        padding-top: .6em;
+        margin-top: .75em;
+        margin-right: 0; }
+        .contact-body .contacts li .avatar h5 {
+          font-size: .9em; }
+      .contact-body .contacts li .contact-info {
+        width: 68%; }
+        .contact-body .contacts li .contact-info p {
+          display: block;
+          float: none;
+          font-size: .9em;
+          margin-top: 0; }
+        .contact-body .contacts li .contact-info .full-name {
+          width: 100%;
+          margin-top: .75em;
+          font-weight: 600; }
+        .contact-body .contacts li .contact-info .phone-number {
+          width: 100%;
+          font-size: .8em; }
+      .contact-body .contacts li .icons {
+        width: 10%;
+        padding-top: 0.75em;
+        padding-bottom: .3em; }
+        .contact-body .contacts li .icons .icon {
+          display: block;
+          float: none;
+          width: .9em;
+          height: .9em;
+          margin: auto; }
+        .contact-body .contacts li .icons .icon-delete {
+          margin-top: .667em; }
+      .contact-body .contacts .title .full-name {
+        font-weight: 400; }
+      .contact-body .contacts .title .phone-number {
+        display: none; }
+  form {
+    width: 80%;
+    left: 10%;
+    padding: 2em 0; }
+    form h3 {
+      margin-left: 2em; }
+    form .input-field {
+      width: 12em; }
+      form .input-field input[type=text], form .input-field input[type=tel] {
+        width: inherit; } }
+
+@media screen and (min-width: 405px) {
+  .contact-body .filter {
+    right: 3em;
+    width: 10.5em; }
+  .contact-body .contacts li .contact-info {
+    width: 73%; }
+  .contact-body .contacts li .icons {
+    width: 10%; } }
+
+@media screen and (min-width: 700px) {
+  .top-nav .brand-name {
+    margin-top: 0.83333em;
+    font-size: 1.5em; }
+  .top-nav .details {
+    right: 1.5em;
+    padding-top: 1em; }
+    .top-nav .details .user {
+      width: 2em;
+      height: 2em;
+      margin-right: 1.5em; }
+    .top-nav .details .username {
+      margin-top: .444em;
+      font-size: 1em; }
+  .contact-body .filter {
+    right: 5.25em;
+    width: 15em; }
+  .contact-body .contacts li .avatar {
+    width: 3em;
+    height: 3em;
+    margin: 0 .5em;
+    margin-top: .5em;
+    padding-top: .75em; }
+  .contact-body .contacts li .contact-info {
+    width: 75%; }
+    .contact-body .contacts li .contact-info p {
+      float: left;
+      padding: 0 1em;
+      font-size: .9em;
+      margin-top: 1.5em; }
+    .contact-body .contacts li .contact-info .full-name {
+      width: 60%;
+      margin-top: 1.5em;
+      font-weight: 400; }
+    .contact-body .contacts li .contact-info .phone-number {
+      margin-top: 1.5em;
+      font-size: .9em;
+      width: 40%; }
+  .contact-body .contacts li .icons {
+    width: 12.5%; }
+    .contact-body .contacts li .icons .icon {
+      width: 1em;
+      height: 1em;
+      margin-left: .75em;
+      margin-top: 1em;
+      float: left; }
+  .contact-body .contacts .title .phone-number {
+    display: block; }
+  form {
+    width: 50%;
+    left: 25%; }
+    form .input-field {
+      width: 15em; } }
+
+@media screen and (min-width: 1024px) {
+  .top-nav .brand-name {
+    margin-top: 0.6em;
+    font-size: 2em; }
+  .top-nav .details {
+    right: 1.5em;
+    padding-top: 1em; }
+    .top-nav .details .user {
+      width: 2em;
+      height: 2em; }
+    .top-nav .details .username {
+      margin-top: .3em;
+      font-size: 1em; }
+  .contact-body {
+    width: 80%; }
+    .contact-body .filter {
+      right: 6.9em;
+      width: 18em; }
+    .contact-body .contacts li .avatar h5 {
+      font-size: 1em; }
+    .contact-body .contacts li .contact-info {
+      width: 76%; }
+      .contact-body .contacts li .contact-info p {
+        font-size: 1em; }
+      .contact-body .contacts li .contact-info .phone-number {
+        font-size: 1em; }
+    .contact-body .contacts li .icons {
+      width: 13%; }
+  form {
+    width: 40%;
+    left: 30%; }
+    form .input-field {
+      width: 18em; } }
+
+@media screen and (min-width: 1300px) {
+  .contact-body {
+    width: 80%; }
+    .contact-body .filter {
+      right: 9em;
+      width: 18em; }
+    .contact-body .contacts li .contact-info {
+      width: 80%; }
+    .contact-body .contacts li .icons {
+      width: 11.5%; }
+  form {
+    width: 30%;
+    left: 35%; } }
