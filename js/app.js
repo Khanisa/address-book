@@ -282,17 +282,19 @@ function editContact(e) {
     //if what we are targetting has a class of icon-edit...
     if(e.target.classList.contains("icon-edit")) {
         // console.log("clicked");
-        let fullName = e.target.parentElement.previousElementSibling.childNodes[0];
-            phoneNumber = e.target.parentElement.previousElementSibling.childNodes[1];
+        let fullName = e.target.parentElement.previousElementSibling.childNodes[0].innerHTML;
+            phoneNumber = e.target.parentElement.previousElementSibling.childNodes[1].innerHTML;
 
         console.log(fullName.innerHTML);
 
-        let name = document.querySelector('input[name="fullName"]')
-        console.log(name.value);
-        name.value = fullName.innerHTML;
+        let name = document.querySelector('input[name="fullName"]');
+            phone = document.querySelector('input[name="phoneNumber"]');
+        // console.log(name.value);
+        //predefined the value of the input field
+        name.value = fullName;
+        phone.value = phoneNumber;
 
-        let phone = document.querySelector('input[name="phoneNumber"]')
-        phone.value = phoneNumber.innerHTML;
+        //to capture the inputted value
 
         showEditForm();       
     }
